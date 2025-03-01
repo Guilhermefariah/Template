@@ -1,10 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-    background-color: #fff;
+    background-color: hsl(0, 0%, 83%);
     color: #0000ff;
 }
 
-#logo {
-    color: #000;
+div#interface {
+    width: 900px;
+    background-color: #fff;
+    margin: 0px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+header#cabecalho {
+    border-bottom: 1px #0000ff solid;
+    height: 150px;
+    background: url('/assets/images/paisagem.jpg') no-repeat 0px 80px;
+}
+
+header#cabecalho h1#logo {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30pt;
+    color: #0000ff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: "Roboto", sans-serif;
+    color: #a52a2a;
+    font-size: 15pt;
+    padding: 0px;
 }
 
 p {
@@ -49,7 +77,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: 0px;
-    right: 10px;
+    left: 400px;
 }
 
 nav#menu li {
@@ -57,14 +85,21 @@ nav#menu li {
     background-color: #000;
     padding: 10px;
     margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: #0000ff;
 }
 
 nav#menu a {
     color: #fff;
+    text-decoration: none;
 }
 
 nav#menu a:hover {
-    color: #0000ff;
+    color: #000;
+    text-decoration: underline;
 }
 
 nav#menu h1 {
