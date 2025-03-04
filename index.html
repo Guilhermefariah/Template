@@ -11,7 +11,7 @@
 <body>
     <div id="interface">
         <header id="cabecalho">
-            <nav id="menu">
+            <nav id="menu" onmouseover="mudaFoto('/assets/images/foto.jpg')" onmouseout="mudaFoto('/assets/images/paisagem.jpg')">
                 <h1>Menu Principal</h1>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -21,7 +21,7 @@
                     <li><a href="assets/pages/fale-conosco.html">Fale Conosco</a></li>
                 </ul>
             </nav>
-            <h1 id="logo">Paisagem</h1>
+            <img id="icone" src="/assets/images/icone.jpg" alt="foto">
             <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
         </header>
         <main>
@@ -50,7 +50,7 @@
                         <h3 class="direita">Loremipsum</h3>
                         <h1>dolor</h1>
                     </article>
-                    
+
                     <table id="tabelaspec">
                         <caption>Tabela <span>2000</span></caption>
                         <tr>
@@ -130,9 +130,6 @@
             </p>
         </footer>
     </div>
-    <h1>Acende a Lâmpada</h1>
-    <img src="https://images.pexels.com/photos/4792503/pexels-photo-4792503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=360&dpr=1" alt="lampada" onmousemove="mudaLampada(1)" id="luz" onmouseout="mudaLampada(2)" onclick="mudaLampada(3)">
-
     <script src="assets/js/script.js"></script>
 </body>
 
